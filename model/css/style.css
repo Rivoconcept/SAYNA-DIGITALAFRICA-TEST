@@ -1,0 +1,252 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v23-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('http://localhost/sayna_test/model/fonts/montserrat-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('http://localhost/sayna_test/model/fonts/montserrat-v23-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('http://localhost/sayna_test/model/fonts/montserrat-v23-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('http://localhost/sayna_test/model/fonts/montserrat-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('http://localhost/sayna_test/model/fonts/montserrat-v23-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: "Far From Homecoming";
+    src: url("//db.onlinewebfonts.com/t/f28a8f550d384f1e8f3c85ff728c4987.eot");
+    src: local(''),
+        url("http://localhost/sayna_test/model/fonts/montserrat.eot") format("embedded-opentype"),
+        url("http://localhost/sayna_test/model/fonts/montserrat.woff2") format("woff2"),
+        url("http://localhost/sayna_test/model/fonts/montserrat.woff") format("woff"),
+        url("http://localhost/sayna_test/model/fonts/montserrat.ttf") format("truetype"),
+        url("http://localhost/sayna_test/model/fonts/montserrat.svg") format("svg");              
+}
+
+
+.backgroundcolor {
+    background-color: #b11313;
+}
+.corps1 {
+    margin-top: -10px;
+    background-image: url("http://localhost/sayna_test/asset/Illustration/img1b.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+/*j'ai eu quelques problèmes concernant la taille de quelques élements. Par exemple :
+La taille 32px indiquée dans le consigne n'est pas proportionnelle avec le "img1.png" en background.
+J'ai du improviser pour arranger la taille visuellement par rapport à l'image W-Home.png */ 
+
+.titre {
+    color: #FFFFFF;
+    font-family: 'Far From Homecoming';
+    font-size: 5.3em; 
+    font-weight:bold;
+    padding-top: 15%;
+    margin-left: 8%;
+}
+
+.contenu {
+    margin-top: 10%;
+    margin-left: 8%;
+}
+.contenu img {
+    width: 100%;
+}
+.btn-rounded {
+    border-radius: 1.1em;
+}
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: #114c92 !important
+}
+.btn-primary {
+    color: #b11313;
+    background-color: #FFFFFF !important;
+    text-transform:none;
+    font-weight: bold;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-right:20px ;
+}
+.btn-outline-primary {
+    text-transform:none;
+    color: #FFFFFF !important;
+    background-color: transparent !important;
+    border: 2px solid #FFFFFF !important;
+    padding-left: 1em;
+    padding-right: 1em;
+    
+}
+h3.titre1 {
+    margin-top: 2%;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #FFFFFF;
+}
+h3.titre2 {
+    color: #FFFFFF;
+    font-family: 'Far From Homecoming', sans-serif;
+    text-transform: uppercase;
+    margin-top: 20%;
+    font-size: 2.2em;
+
+}
+.soustitre {
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+}
+.texte {
+    color: #FFFFFF;
+    text-align:justify;
+    margin-top: 10%;
+    font-family:'Montserrat';
+    font-size: 14px;
+ 
+}
+.taille {
+    max-width: 27%;
+    margin-right: 3%; 
+    margin-top: 2%; 
+    
+}
+.bouton {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 30%;
+}
+
+.corps2 {
+    background-color:#114c92 ;
+   
+}
+.corps2 h1 {
+    color: #FFFFFF;
+    font-family: 'Far From Homecoming', sans-serif;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+.corps2 .soustitre {
+    margin-bottom: 5%;
+}
+
+.place {
+margin-left: -10%;
+}
+
+.formulaire1 {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+.corps2 button {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.corps3 {
+    background-color:#b11313 ;
+    text-align: left!important;
+   
+}
+.corps3 img {
+    width: 100%;
+}
+
+.corps3 h2 {
+    color: #FFFFFF;
+    font-family: 'Far From Homecoming', sans-serif;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+
+.corps3 .form-control {
+    background-color: transparent!important;
+}
+
+.corps3 .soustitre {
+    margin-bottom: 5%;
+}
+
+
+.formulaire2 {
+    width: 70%;
+    margin-top: 2%;
+}
+
+.corps3 button {
+    margin-top: 5%;
+    margin-left: 10%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+footer {
+    background-color: #000000;
+}
+
+/****************************************************************************************************************/
+@media screen and (max-width: 600px) {
+    .titre {
+        font-size: 4em; 
+    }
+    h3.titre2 {
+        font-size: 2em; 
+    }
+    .corps2 img {
+        width: 100%;
+    }
+    .corps2 h1{
+        margin-left: 10%;
+        font-size: 1.5em;
+    }
+    .corps3 h2 {
+        margin-left: 10%;
+        font-size: 1.5em;
+    }
+    .formulaire2 {
+        width: 95%; 
+    }
+}
+@media screen and (max-width: 480px) {
+    .titre {
+        font-size: 2.8em; 
+    }
+    h3.titre1 {
+        font-size: 1.5em; 
+    }
+    h3.titre2 {
+        font-size: 1.5em; 
+    }
+    .corps2 h1{
+        margin-left: 10%;
+        font-size: 1em;
+    }
+    .corps3 h2 {
+        margin-left: 10%;
+        font-size: 1em;
+    }
+    .formulaire2 {
+        width: 90%; 
+    }
+}
+@media screen and (max-width: 1024px) {
+    .taille {
+        max-width: 300px;        
+    }
+    .corps2 h1{
+        margin-left: 10%;
+        font-size: 2em;
+    }
+    .corps2 .soustitre{
+        margin-left: 10%;
+    }
+    .formulaire1 {
+        width: 100%;
+        margin-left: 10%;
+        
+    }
+    .formulaire2 {
+        width: 95%; 
+    }
+}
