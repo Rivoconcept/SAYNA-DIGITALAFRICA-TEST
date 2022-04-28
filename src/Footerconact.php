@@ -2,12 +2,12 @@
 namespace App;
 class Footerconact{
 
-    public function mescontact(){
+    public function collaboration(){
         return [
-            "num" => "033.62.113.51",
-            "address" => "MAHAZO 1",
-            "code" => "101",
-            "ville" => "Tananarivo",
+            "colab1" => "Sayna",
+            "colab2" => "Marvel",
+            "année" => "2022",
+            "message" => "We love our users !",   
         ];
     }
 }

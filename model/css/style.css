@@ -130,12 +130,12 @@ h3.titre2 {
     margin-bottom: 5%;
 }
 
-.place {
+.place1 {
 margin-left: -10%;
 }
 
 .formulaire1 {
-    width: 60%;
+    width: 400px;
     margin: 0 auto;
     margin-top: 2%;
 }
@@ -165,12 +165,11 @@ margin-left: -10%;
 }
 
 .corps3 .soustitre {
-    margin-bottom: 5%;
+    margin-bottom: 5%;  
 }
 
-
 .formulaire2 {
-    width: 70%;
+    width:400px;
     margin-top: 2%;
 }
 
@@ -184,69 +183,76 @@ margin-left: -10%;
 footer {
     background-color: #000000;
 }
+footer .form-control {
+    background-color:#b11313!important;
+    color:#FFFFFF;
+    width: 130px!important;
+    margin: 0 auto;
+
+}
+footer .media i{
+    padding-top:13px;
+    padding-left:13px;
+    width: 50px;
+    height: 50px;
+    background-color: #b11313;
+    
+}
+
 
 /****************************************************************************************************************/
-@media screen and (max-width: 600px) {
-    .titre {
-        font-size: 4em; 
-    }
-    h3.titre2 {
-        font-size: 2em; 
+@media screen and (max-width: 1280px) {
+    .taille {
+        max-width: 300px;        
     }
     .corps2 img {
         width: 100%;
     }
-    .corps2 h1{
-        margin-left: 10%;
-        font-size: 1.5em;
-    }
-    .corps3 h2 {
-        margin-left: 10%;
-        font-size: 1.5em;
-    }
-    .formulaire2 {
-        width: 95%; 
-    }
-}
-@media screen and (max-width: 480px) {
-    .titre {
-        font-size: 2.8em; 
-    }
-    h3.titre1 {
-        font-size: 1.5em; 
-    }
-    h3.titre2 {
-        font-size: 1.5em; 
-    }
-    .corps2 h1{
-        margin-left: 10%;
-        font-size: 1em;
-    }
-    .corps3 h2 {
-        margin-left: 10%;
-        font-size: 1em;
-    }
-    .formulaire2 {
-        width: 90%; 
-    }
-}
-@media screen and (max-width: 1024px) {
-    .taille {
-        max-width: 300px;        
-    }
-    .corps2 h1{
-        margin-left: 10%;
+    .corps2 h1 {
         font-size: 2em;
     }
-    .corps2 .soustitre{
-        margin-left: 10%;
+    .corps3 h2 {
+        font-size: 1.7em;
+    }
+   
+}
+@media screen and (max-width: 780px) {
+    .titre {
+        font-size: 4em;        
+    }
+    h3.titre1 {
+        font-size: 25px;
+    } 
+    h3.titre2 {
+        font-size: 25px;
+    }
+    .place1 {
+        margin-left: 3%;
+    }
+    .corps3 h2 {
+        font-size: 1.6em;
+    }
+}
+@media screen and (max-width:480px) {
+    .titre {
+        font-size: 2.5em; 
+    }
+    h3.titre1 {
+        font-size: 20px;
+    } 
+    h3.titre2 {
+        font-size: 20px;
+    }
+    .corps2 h1 {
+        font-size: 1.5em;
     }
     .formulaire1 {
-        width: 100%;
-        margin-left: 10%;
-        
+        width: 300px;
+    }
+    .corps3 h2 {
+        font-size: 1.3em;
     }
     .formulaire2 {
-        width: 95%; 
+        width: 285px;
     }
 }

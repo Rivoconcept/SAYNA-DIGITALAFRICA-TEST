@@ -1,7 +1,7 @@
 <?php
 
 use App\Footerconact;
-use App\Test;
+
 
 require_once("vendor/autoload.php");
 $loader = new \Twig\Loader\FilesystemLoader(__DIR__ . '/view'); // repertoir contient tous les fichiers twig
@@ -12,9 +12,7 @@ $twig = new \Twig\Environment($loader, [
 
 $twig->addExtension(new \Twig\Extension\DebugExtension());
 
-$addition = new Test;
-
-$contct = new Footerconact;
+$footer = new Footerconact;
 
 $get_view = "";
 if (isset($_GET["s"])){
@@ -25,7 +23,7 @@ switch ($get_view) {
 
     case 'acc':
         $loadpage1 = "active";$loadpage2 = "";$loadpage3 = "";$loadpage4 = "";
-        echo $twig->render("acceuil.twig",["loadpage1" => $loadpage1]);
+        echo $twig->render("acceuil.twig",["loadpage1" => $loadpage1, "myfooter" => $footer->collaboration()]);
         break;
 
         case 'adv':
@@ -33,7 +31,7 @@ switch ($get_view) {
             echo $twig->render("adversaires.twig",["loadpage2" =>  $loadpage2]);
         break;
 
-        case 'Her':
+        case 'her':
             $loadpage1 = "";$loadpage2 = "";$loadpage3 = "active";$loadpage4 = "";
             echo $twig->render("heros.twig", ["loadpage3" =>  $loadpage3]);
         break;
@@ -44,8 +42,10 @@ switch ($get_view) {
         break;
 
     default:
-    echo $twig->render("acceuil.twig");
+            $loadpage1 = "active";$loadpage2 = "";$loadpage3 = "";$loadpage4 = "";
+            echo $twig->render("acceuil.twig",["loadpage1" => $loadpage1, "myfooter" => $footer->collaboration()]);
         break;
 }
+
 
 

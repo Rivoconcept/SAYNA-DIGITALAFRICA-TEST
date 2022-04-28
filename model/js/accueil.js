@@ -1,4 +1,4 @@
 
 $(document).on('click','#heros', function(){
-   alert($(".corps3 .soustitre").css("font-size"));
+   alert($(".formulaire1").css("width"));
 })
